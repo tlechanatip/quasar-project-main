@@ -18,7 +18,7 @@
     <!-- surname -->
       <q-input
         filled
-        v-model="name"
+        v-model="surname"
         label="Your surname *"
         hint="surname"
         lazy-rules
@@ -57,12 +57,14 @@ export default {
   setup () {
     const $q = useQuasar()
 
-    const name = ref(null)
+    const name = ref("ชนาธิป")
+    const surname = ref("สร้อยจิตร")
     const age = ref(null)
     const accept = ref(false)
 
     return {
       name,
+      surname,
       age,
       accept,
 
